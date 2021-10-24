@@ -6,23 +6,25 @@ public class Bingo {
         int counter = 0;
         Random random = new Random();
         int x = random.nextInt(101);
-        System.out.println("Текущее число: " + x);
+        //System.out.println("Текущее число: " + x);
         Scanner scan = new Scanner(System.in);
         int y;
             while (counter < 100) {
             counter++;
-            System.out.println("введите переменную y:");
+            System.out.println("Введите число:");
             y = scan.nextInt();
+            if (Integer.toString (y) == "exit") {
+                    break;
+            }
 
-
-
-        if (x == y)  {
+            if (x == y)  {
+            System.out.println("Поздравляем, Вы угадали");
             break;
-
         } else if (x > y) {
-            System.out.print("Задуманное число больше, чем Вы предполагаете");
-        }  else {
-            System.out.print("Задуманное число меньше, чем Вы предполагаете");
+            System.out.print("Задуманное число больше, чем Вы предполагаете. ");
+        }
+            else {
+            System.out.print("Задуманное число меньше, чем Вы предполагаете. ");
         }}
     }
 }
