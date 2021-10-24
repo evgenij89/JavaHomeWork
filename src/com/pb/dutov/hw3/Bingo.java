@@ -18,7 +18,7 @@ public class Bingo {
             }
 
             if (x == y)  {
-            System.out.println("Поздравляем, Вы угадали");
+            System.out.println("Поздравляем, Вы угадали с " + counter + " попытки");
             break;
         } else if (x > y) {
             System.out.print("Задуманное число больше, чем Вы предполагаете. ");
@@ -27,4 +27,5 @@ public class Bingo {
             System.out.print("Задуманное число меньше, чем Вы предполагаете. ");
         }}
     }
+
 }
