@@ -6,7 +6,7 @@ public class Bingo {
         int counter = 0;
         Random random = new Random();
         int x = random.nextInt(101);
-        //System.out.println("Текущее число: " + x);
+        System.out.println("Текущее число: " + x);
         Scanner scan = new Scanner(System.in);
         int y;
             while (counter < 100) {
