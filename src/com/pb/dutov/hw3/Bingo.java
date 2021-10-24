@@ -13,10 +13,6 @@ public class Bingo {
             counter++;
             System.out.println("Введите число:");
             y = scan.nextInt();
-            if (Integer.toString (y) == "exit") {
-                    break;
-            }
-
             if (x == y)  {
             System.out.println("Поздравляем, Вы угадали с " + counter + " попытки");
             break;
